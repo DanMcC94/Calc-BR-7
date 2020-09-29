@@ -18,3 +18,11 @@ id's:
 
 ##Design
 
+Messing with data 
+1.Create an event listner for any class btn
+2.If-number, operator, or =
+3.while(button.class!=operator){ save all inputs into a number }
+4.data: firstNumber =""; secondNumber=""; operator ="";
+
+
+
