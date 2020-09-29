@@ -77,7 +77,41 @@
 
 $(document).ready(function() {
 
-// Your code here...
+  // Your code here...
+
+  //data: firstNumber(string), secondNumber(string), operatorChosen(boolean)=false (default)
+  //*add event listener
+  //if button = number AND operator hasn't been chosen, save number into firstNumber 
+  //if button = operator save into operator
+  //if button = number AND operator has been chosen, save number into secondNumber
+  // parse to int
+  var firstNumber="";
+  var secondNumber="";
+  var operator = "";
+  var operatorChosen = false;
+
+  $(".btn").on("click",function(){
+    //if bttn is a number, and haven't chosen operator, save to firstNumber
+    if(!operatorChosen && $(this).attr("class")=="btn btn-primary number"){
+      var buttonValue = $(this).attr("value");
+      firstNumber+=buttonValue;
+    }
+    //if bttn is an operator, save to operator
+    else if($(this).attr("class")=="btn btn-danger operator"){
+      operatorChosen=true;
+      operator=$(this).attr("value");
+    }
+    //operator has already been chosen, we are on second number 
+    else if($(this).attr("class")=="btn btn-primary number") {
+      // we are on our second number
+      var buttonValue = $(this).attr("value");
+      secondNumber+=buttonValue;
+    }
+  console.log("The first number is: "+firstNumber);
+  console.log("The operator number is: "+operator);
+  console.log("The second number is: "+secondNumber);
+  });
+  
 
 
 });
