@@ -1,0 +1,20 @@
+We are going to add the javscript code @ the end of the html file (not seperate file)
+
+##Buttons - all buttons have class "btn"
+
+Button classes: 
+0-9: "btn-primary number" 
++,-,*,/, : "btn-danger operator"
+=: "btn-success equal"
+clear: "clear"
+
+##Result table: split into 3 h1 headers
+
+id's:
+"#first-number"
+"#operator"
+"#second-number"
+"#result"
+
+##Design
+
