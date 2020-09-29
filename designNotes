@@ -9,7 +9,6 @@ Button classes:
 clear: "clear"
 
 ##Result table: split into 3 h1 headers
-
 id's:
 "#first-number"
 "#operator"
@@ -24,5 +23,9 @@ Messing with data
 3.while(button.class!=operator){ save all inputs into a number }
 4.data: firstNumber =""; secondNumber=""; operator ="";
 
+Displaying data
+1. *once operator has been chosen, display firstNumber to "#first-number"
+2. *display operator
+3. once equals is chosen, display number 2 
 
 
