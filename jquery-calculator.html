@@ -95,11 +95,12 @@ $(document).ready(function() {
     if(!operatorChosen && $(this).attr("class")=="btn btn-primary number"){
       var buttonValue = $(this).attr("value");
       firstNumber+=buttonValue;
+      $("#first-number").text(firstNumber);
     }
     //if bttn is an operator, save to operator
     else if($(this).attr("class")=="btn btn-danger operator"){
       operatorChosen=true;
-      $("#first-number").text(firstNumber);
+      
       operator=$(this).text();
       $("#operator").text(operator);
     }
@@ -108,10 +109,10 @@ $(document).ready(function() {
       // we are on our second number
       var buttonValue = $(this).attr("value");
       secondNumber+=buttonValue;
+      $("#second-number").text(secondNumber);
     }
     else if($(this).attr("class")=="btn btn-success equal"){
-      //display second number
-      $("#second-number").text(secondNumber);
+      $("#result").text("= ");
       // need to do the math
     }
   });
