@@ -1,4 +1,5 @@
 # jQuery Calculator
+# Team Members: Dan McCartney, Jonathan Thibeaux, Aminadab Morales
 
 ## File
 
